@@ -19,3 +19,5 @@ jobs:
           mvn compile
           echo "Run Junit"
           mvn test
+          mvn cobertura:cobertura
+          mvn cobertura:dump-datafile
