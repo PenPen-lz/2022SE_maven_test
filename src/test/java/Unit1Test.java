@@ -12,13 +12,13 @@ public class Unit1Test {
         assertEquals("passed", u1.isPassed());
         u1.setGrade(150);
         //if there were an error
-        assertEquals("passed",u1.isPassed());
+        assertEquals("no way",u1.isPassed());
         System.out.println(u1.gradeAdd());
     }
 
     @org.junit.Test
     public void gradeAdd() {
         Unit1 u = new Unit1(-50);
-        assertEquals(0, u.gradeAdd());
+        assertEquals(50, u.gradeAdd());
     }
 }
